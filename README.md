@@ -5,4 +5,4 @@
 - If you have or know of any useful resources for any of these languages, feel free to share them
   
 - Contact me @ xaenogenetical@gmail.com or via discord @ xaenogenetical.  
-- ⚡ Fun fact: I'm left-hand
+- ⚡ Fun fact: I'm left-handed
