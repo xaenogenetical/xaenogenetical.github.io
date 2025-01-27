@@ -6,3 +6,8 @@
   
 - Contact me @ xaenogenetical@gmail.com or via discord @ xaenogenetical.  
 - ⚡ Fun fact: I'm left-handed
+
+- To pay for services or if you're feeling generous:
+- bitcoin: bc1qaznptzps394feknt0a79r23rm7w6vlcctgxrd9
+- eth: 0x1E82A6cf09a3734BE995034584F1eFb712a03939
+- cashapp: $xaenogen
