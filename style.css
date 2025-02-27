@@ -28,6 +28,13 @@ body {
 img {
     max-width: 100%;
     margin-top: 10px;
+    transform: rotate(0deg);
+    transition-duration: 2s;
+}
+
+.spin {
+    transform: rotate(360deg);
+    transition-duration: 2s;
 }
 
 footer {
@@ -67,10 +74,19 @@ footer {
     background-color: #ccc;
 }
 
+.rotate {
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+}
+
+.regular {
+    transition-duration: 0.5s;
+}
+
 .projectgroup {
     padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.5s ease-out;
 }
