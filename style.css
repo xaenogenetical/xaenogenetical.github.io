@@ -28,12 +28,13 @@ body {
 img {
     max-width: 100%;
     margin-top: 10px;
-    transform: rotate(0deg);
+    transform: rotate(0deg) translate(0px);
     transition-duration: 2s;
 }
 
 .spin {
-    transform: rotate(360deg);
+    /*fun little easter egg for anyone looking*/
+    transform: rotate(360deg) translate(300px);
     transition-duration: 2s;
 }
 
