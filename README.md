@@ -1,12 +1,16 @@
-- Thanks for checking my README, a lot of people like to skip past these even though they often contain important info about the program
-- I'm currently an undergratuate student at Iowa State University pusuing a degree in software engineering (as of 2025) 
-- I consider myself proficient in Java and C, and I am working to become proficient in JavaScript, C++, C#, Python, and as many other languages as possible
-- If you have or know of any useful resources for any of these languages, feel free to share them
-  
-- Contact me @ xaenogenetical@gmail.com or via discord @ xaenogenetical.  
-- ⚡ Fun fact: I'm left-handed
+# React + Vite
 
-- To pay for services or if you're feeling generous:
-- bitcoin: bc1qaznptzps394feknt0a79r23rm7w6vlcctgxrd9
-- eth: 0x1E82A6cf09a3734BE995034584F1eFb712a03939
-- cashapp: $xaenogen
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
