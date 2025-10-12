@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProjectCard from "./components/ProjectCard";
 import SkillBadge from "./components/SkillBadge";
-
+import pfp from "./assets/PROFILEPFP.jpg";
 function App() {
 	const projects = [
 		{
@@ -23,7 +23,7 @@ function App() {
 			title: "Portfolio",
 			description:
 				"React + Vite + Tailwind web app rendering the very page you are looking at right now.",
-			github: "https://github.com/xaenogenetical/portfolio",
+			github: "https://github.com/xaenogenetical/xaenogenetical.github.io",
 			complete: true,
 		},
 		{
@@ -38,6 +38,12 @@ function App() {
 			description:
 				"A fairly bare-bones roguelike game, similar to the original Rogue. Written in C++ (converted from C)",
 			github: "https://github.com/xaenogenetical/327Roguelike",
+			complete: true,
+		},
+		{
+			title: "Wordsearch",
+			description: "My first ever project in C, a simple word search generator",
+			github: "https://github.com/xaenogenetical/wordsearch",
 			complete: true,
 		},
 	];
@@ -64,7 +70,10 @@ function App() {
 				id='hero'
 				className='min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-b from-gray-100 to-white'
 			>
-				<img alt=''></img>
+				<img
+					src={pfp}
+					alt='Headshot'
+				></img>
 				<h1 className='text-5xl font-bold mb-4'>Dylan Krahenbuhl</h1>
 				<p className='text-xl text-gray-700 mb-6'>Full Stack Developer</p>
 				<div className='flex space-x-4'>
