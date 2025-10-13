@@ -1,3 +1,5 @@
+import Resume from "../assets/Dylan-Krahenbuhl-Resume.pdf";
+
 export default function Footer() {
 	return (
 		<footer className='bg-gray-900 text-white text-center py-6'>
@@ -22,7 +24,7 @@ export default function Footer() {
 					LinkedIn
 				</a>
 				<a
-					href='src/assets/Dylan-Krahenbuhl-Resume.pdf'
+					href={Resume}
 					download
 				>
 					Download Resume
