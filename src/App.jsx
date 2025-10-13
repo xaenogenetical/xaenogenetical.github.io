@@ -2,8 +2,11 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProjectCard from "./components/ProjectCard";
 import SkillBadge from "./components/SkillBadge";
+import AboutMe from "./components/AboutMe";
 import pfp from "./assets/PROFILEPFP.jpg";
+import React from "react";
 function App() {
+	const [page, setPage] = React.useState("home");
 	const projects = [
 		{
 			title: "Encryption/Decryption System",
@@ -74,65 +77,68 @@ function App() {
 
 	return (
 		<div className='font-sans text-gray-900 w-screen'>
-			<Header />
-
-			<section
-				id='hero'
-				className='min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-b from-gray-100 to-white'
-			>
-				<img
-					src={pfp}
-					alt='Headshot'
-					className='rounded-3xl'
-				></img>
-				<h1 className='text-5xl font-bold mb-4'>Dylan Krahenbuhl</h1>
-				<p className='text-xl text-gray-700 mb-6'>Full Stack Developer</p>
-				<div className='flex space-x-4'>
-					<a
-						href='#projects'
-						className='btn-primary'
+			<Header setPage={setPage} />
+			{page === "home" && (
+				<>
+					<section
+						id='hero'
+						className='min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-b from-gray-100 to-white'
 					>
-						View Projects
-					</a>
-					<a
-						href='mailto:dakrahenbuhl2006@gmail.com'
-						className='btn-secondary'
+						<img
+							src={pfp}
+							alt='Headshot'
+							className='rounded-3xl'
+						></img>
+						<h1 className='text-5xl font-bold mb-4'>Dylan Krahenbuhl</h1>
+						<p className='text-xl text-gray-700 mb-6'>Full Stack Developer</p>
+						<div className='flex space-x-4'>
+							<a
+								href='#projects'
+								className='btn-primary'
+							>
+								View Projects
+							</a>
+							<a
+								href='mailto:dakrahenbuhl2006@gmail.com'
+								className='btn-secondary'
+							>
+								Contact Me
+							</a>
+						</div>
+					</section>
+
+					<section
+						id='projects'
+						className='py-20 px-10 bg-gray-400'
 					>
-						Contact Me
-					</a>
-				</div>
-			</section>
+						<h2 className='text-4xl font-bold mb-10 text-center'>Projects</h2>
+						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+							{projects.map((proj) => (
+								<ProjectCard
+									key={proj.title}
+									project={proj}
+								/>
+							))}
+						</div>
+					</section>
 
-			<section
-				id='projects'
-				className='py-20 px-10 bg-gray-400'
-			>
-				<h2 className='text-4xl font-bold mb-10 text-center'>Projects</h2>
-				<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
-					{projects.map((proj) => (
-						<ProjectCard
-							key={proj.title}
-							project={proj}
-						/>
-					))}
-				</div>
-			</section>
-
-			<section
-				id='skills'
-				className='py-20 px-10 bg-gray-100'
-			>
-				<h2 className='text-4xl font-bold mb-10 text-center'>Skills</h2>
-				<div className='flex flex-wrap justify-center gap-4'>
-					{skills.map((skill) => (
-						<SkillBadge
-							key={skill}
-							skill={skill}
-						/>
-					))}
-				</div>
-			</section>
-
+					<section
+						id='skills'
+						className='py-20 px-10 bg-gray-100'
+					>
+						<h2 className='text-4xl font-bold mb-10 text-center'>Skills</h2>
+						<div className='flex flex-wrap justify-center gap-4'>
+							{skills.map((skill) => (
+								<SkillBadge
+									key={skill}
+									skill={skill}
+								/>
+							))}
+						</div>
+					</section>
+				</>
+			)}
+			{page === "about" && <AboutMe />}
 			<Footer />
 		</div>
 	);
