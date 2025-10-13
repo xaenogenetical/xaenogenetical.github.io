@@ -4,9 +4,9 @@ export default function AboutMe() {
 	return (
 		<section
 			id='about'
-			className='min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-white to-gray-100 px-8 py-20'
+			className='min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-b from-white to-gray-100 px-8 py-20'
 		>
-			<div className='max-w-4xl w-full text-center'>
+			<div className='w-full text-center'>
 				<img
 					src={PROFILEPFP}
 					alt='Profile'
