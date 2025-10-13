@@ -13,18 +13,6 @@ export default function Header({ setPage }) {
 					About Me
 				</a>
 				<a
-					href='#projects'
-					className='hover:text-blue-600'
-				>
-					Projects
-				</a>
-				<a
-					href='#skills'
-					className='hover:text-blue-600'
-				>
-					Skills
-				</a>
-				<a
 					href='#hero'
 					className='hover:text-blue-600'
 					onClick={() => {
