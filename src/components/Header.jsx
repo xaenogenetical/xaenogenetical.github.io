@@ -4,7 +4,7 @@ export default function Header({ setPage }) {
 			<div className='font-bold text-xl'>D. Krahenbuhl</div>
 			<nav className='space-x-4'>
 				<a
-					href='#hero'
+					href='#'
 					className=''
 					onClick={() => {
 						setPage("about");

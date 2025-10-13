@@ -1,22 +1,33 @@
 export default function Footer() {
 	return (
-		<footer className='py-6 text-center bg-gray-100'>
-			<p>© 2025 D. Krahenbuhl. All rights reserved.</p>
-			<p>
+		<footer className='bg-gray-900 text-white text-center py-6'>
+			<p>© 2025 Dylan Krahenbuhl</p>
+			<div className='flex justify-center space-x-6 mt-3'>
+				<a
+					href='mailto:dakrahenbuhl2006@gmail.com'
+					className='hover:underline'
+				>
+					Email
+				</a>
 				<a
 					href='https://github.com/xaenogenetical'
-					className='text-blue-600 hover:underline'
+					className='hover:underline'
 				>
 					GitHub
-				</a>{" "}
-				|
+				</a>
 				<a
-					href='https://linkedin.com/in/dkrahenbuhl'
-					className='text-blue-600 hover:underline ml-2'
+					href='https://www.linkedin.com/in/dkrahenbuhl'
+					className='hover:underline'
 				>
 					LinkedIn
 				</a>
-			</p>
+				<a
+					href='src/assets/Dylan-Krahenbuhl-Resume.pdf'
+					download
+				>
+					Download Resume
+				</a>
+			</div>
 		</footer>
 	);
 }
