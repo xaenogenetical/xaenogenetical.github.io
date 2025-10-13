@@ -112,7 +112,7 @@ function App() {
 						className='py-20 px-10 bg-gray-400'
 					>
 						<h2 className='text-4xl font-bold mb-10 text-center'>Projects</h2>
-						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-full'>
 							{projects.map((proj) => (
 								<ProjectCard
 									key={proj.title}
