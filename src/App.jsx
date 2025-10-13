@@ -76,7 +76,7 @@ function App() {
 	];
 
 	return (
-		<div className='font-sans text-gray-900 w-screen'>
+		<div className='font-sans text-gray-900 w-full'>
 			<Header setPage={setPage} />
 			{page === "home" && (
 				<>
@@ -109,7 +109,7 @@ function App() {
 
 					<section
 						id='projects'
-						className='py-20 px-10 bg-gray-400'
+						className='py-20 px-10 bg-gray-400 overflow-hidden'
 					>
 						<h2 className='text-4xl font-bold mb-10 text-center'>Projects</h2>
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-full'>
