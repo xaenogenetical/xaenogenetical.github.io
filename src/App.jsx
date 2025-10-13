@@ -46,20 +46,30 @@ function App() {
 			github: "https://github.com/xaenogenetical/wordsearch",
 			complete: true,
 		},
+		{
+			title: "CyChat",
+			description:
+				"An android app + Java Spring Boot backend for a group project",
+			github: "https://github.com/xaenogenetical/cychat_backend",
+			complete: false,
+		},
 	];
 
 	const skills = [
 		"C",
 		"C++",
 		"Java",
-		"Java Spring",
+		"Java Spring Boot",
 		"Python",
-		"JS",
+		"JavaScript",
 		"ReactJS",
 		"Linux",
 		"SQL",
 		"Git",
 		"Github/Gitlab",
+		"LEGv8 Assembly",
+		"HTML",
+		"CSS",
 	];
 
 	return (
