@@ -83,6 +83,7 @@ function App() {
 				<img
 					src={pfp}
 					alt='Headshot'
+					className='rounded-3xl'
 				></img>
 				<h1 className='text-5xl font-bold mb-4'>Dylan Krahenbuhl</h1>
 				<p className='text-xl text-gray-700 mb-6'>Full Stack Developer</p>
