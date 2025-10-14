@@ -44,6 +44,13 @@ function App() {
 			complete: true,
 		},
 		{
+			title: "Culinary Atlas",
+			description:
+				"A MERN (Mongodb, Express, React, Node) web app that simulates an online food ordering page",
+			github: "https://github.com/xaenogenetical/Culinary_Atlas",
+			complete: true,
+		},
+		{
 			title: "Wordsearch",
 			description: "My first ever project in C, a simple word search generator",
 			github: "https://github.com/xaenogenetical/wordsearch",
@@ -67,6 +74,7 @@ function App() {
 		"JavaScript",
 		"ReactJS",
 		"Linux",
+		"Windows",
 		"SQL",
 		"Git",
 		"Github/Gitlab",
